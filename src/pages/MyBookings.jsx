@@ -15,7 +15,7 @@ const MyBookings = () => {
                 <div className='w-1/3'>Hotels</div>
                 <div className='w-1/3'>Date & Time</div>
                 <div className='w-1/3'>Payment</div>
-                <div className='w-1/3'>Hotels</div>
+                
                 
             </div>
 

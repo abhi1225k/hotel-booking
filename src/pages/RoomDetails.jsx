@@ -127,14 +127,14 @@ const RoomDetails = () => {
               className='h-14 w-14 rounded-full md:h-18 md:w-18'
             />
             <div>
-              <p className='text-lg md:text-xl'>Hosted by{room.hotel.name}</p>
+              <p className='text-lg md:text-xl'>Hosted by <br/>abhi_kaldate</p>
               <div className='flex items-center mt-1'>
                 <StarRating/>
                 <p className='ml-2'>200+reviews</p>
               </div>
             </div>
           </div>
-          <button className='px-6 py-2.5 mt-4 rounded text-white bg-primary hover:bg-primary-dull transition-all cursor-pointer'>Contact Now</button>
+          <button className='px-6 py-2.5 mt-4 rounded text-white bg-primary hover:bg-primary-dull transition-all cursor-pointer'>Contact Now<br/>+91 917-506-1225</button>
         </div>
     </div>
   )

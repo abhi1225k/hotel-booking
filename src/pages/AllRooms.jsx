@@ -57,13 +57,12 @@ const AllRooms = () => {
             <img onClick={()=> {navigate(`/rooms/${room._id}`); scrollTo(0,0)}}
              src={room.images[0]} alt="hotel-img" title='view Room Details'
                 className='max-h-65 md:w-1/2 rounded-x1 shadow-lg object-cover
-                cursor-pointer'
-            />
+                cursor-pointer'/>
             <div className='md:w-1/2 flex flex-col gap-2'>
             <p className='text-gray-500'>{room.hotel.city}</p>
             <p onClick={()=> {navigate(`/rooms/${room._id}`); scrollTo(0,0)}}
-             className='text-gray-800 text-3x1 font-playfair
-            cursor-pointer'>{room.hotel.city}</p>
+             className='text-gray-800 text-3xl font-playfair
+            cursor-pointer'>{room.hotel.name}</p>
             <div className='flex items-center'>
                 <StarRating />
                 <p className='ml-2'>200+ reviews</p>
@@ -72,14 +71,13 @@ const AllRooms = () => {
                 <imf src={assets.locationIcon} alt="location-icon" />
                 <span>{room.hotel.address}</span>
             </div>
-            {/*room amen*/}
+            {/*room amenities*/}
             <div className='flex flex-wrap items-center gap-2 mt-3 mb-6'>
               {room.amenities.map((item, index) => (
                 <div key={index} className='flex items-center gap-2 
                 px-2 py-1 rounded-lg bg-[#f5F5FF]/70'>
-                   <img src={facilityIcons[item]} alt={item} className='
-                   w-5 h-5'/>
-                   <p className='text-x5'>{item}</p>
+                   <img src={facilityIcons[item]} alt={item} className='w-5 h-5'/>
+                   <p className='text-xs'>{item}</p>
                 </div>
               ))}
             </div>
